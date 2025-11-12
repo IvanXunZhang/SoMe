@@ -8,7 +8,7 @@ models/*
 openai_agent/*
 openai_tools/*
 question_generation/*
-qwen_agent/*
+qwen_agent*
 results/*
 results_newly/*
 scores/*
@@ -27,3 +27,4 @@ README*
 vllm
 setup*
 config*
+demo*
