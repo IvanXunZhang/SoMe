@@ -19,7 +19,7 @@ test*
 *classification*
 extract*
 exp*
-agent*
+agent_openai*
 data*
 Download*
 oai*
@@ -28,3 +28,5 @@ vllm
 setup*
 config*
 demo*
+plots/*
+*__pycache__/*
