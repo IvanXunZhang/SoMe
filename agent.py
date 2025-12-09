@@ -10,17 +10,17 @@ from qwen_agent.tools import BaseTool
 from qwen_agent.memory import Memory
 from qwen_agent.log import logger
 from qwen_agent.utils.utils import extract_files_from_messages, get_basename_from_url, print_traceback
-from config import vllm_config, MAX_LLM_CALL_PER_RUN
+from config import MAX_LLM_CALL_PER_RUN
 
 
 class SocialMediaAgent(Agent):
     def __init__(self,
+                 llm: Optional[dict],
                  function_list: Optional[List[Union[str, Dict, BaseTool]]] = None,
                  system_message: Optional[str] = '',
                  name: Optional[str] = None,
                  description: Optional[str] = None,
                  files: Optional[List[str]] = None,
-                 llm: Optional[dict] = vllm_config,
                  **kwargs):
         """Initialization the agent.
 

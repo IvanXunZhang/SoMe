@@ -22,7 +22,6 @@ oai*
 README*
 api_keys.txt
 setup*
-config*
 demo*
 plots/*
 __pycache__/
