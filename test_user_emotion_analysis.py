@@ -45,7 +45,7 @@ bot = SocialMediaAgent(system_message=task.zh_prompt,
                        function_list=[SearchUser(), DataFolder()],
                        llm=vllm_config)
 emotion_data = json.load(open("datasets/user_emotion_analysis/ground_truth.json", encoding='utf-8'))
-post_data = json.load(open("database/post_data/all_posts2.json", encoding='utf-8'))
+post_data = json.load(open("database/post_data/all_posts.json", encoding='utf-8'))
 for user_id in tqdm(emotion_data):
     if user_id not in results:
         results[user_id] = {}

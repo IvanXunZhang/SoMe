@@ -1,5 +1,5 @@
 #  Embedding model configuration
-embedding_model_path = "./models/Qwen3-Embedding-4B"
+embedding_model_path = "Qwen/Qwen3-Embedding-4B" # or locally "./models/Qwen3-Embedding-4B"
 embedding_model_device = "cpu"
 
 knowledge_path = "./database/knowledge_data/knowledge_base.json"

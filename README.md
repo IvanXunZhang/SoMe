@@ -80,6 +80,12 @@ pip install -r requirements.txt
 pip install -e ./qwen_agent
 ```
 
+4. 📥 Download the test data and unzip it into `database`
+   - Google Drive: [https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link](https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link)  
+   - Baidu Disk: [https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe](https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe) SoMe
+
+
+
 ## 💻 Usage
 
 ### 🏃‍♂️ Running Individual Tasks
