@@ -6,7 +6,7 @@
 
 ## 📋 Overview
 
-SoMe is a comprehensive benchmark designed to evaluate the capabilities of Large Language Model (LLM)-based agents in realistic social media scenarios. This benchmark provides a standardized framework for testing and comparing social media agents across multiple dimensions of performance.
+SoMe is a comprehensive benchmark designed to evaluate the capabilities of Large Language Model (LLM)-based agents in realistic social media scenarios. This benchmark provides a standardized framework for testing and comparing social media agents across multiple dimensions of performance. SoMe comprises a diverse collection of 8 social media agent tasks, 9,164,284 posts, 6,591 user profiles, and 25,686 reports from various social media platforms (such as Weibo and X) and external websites, with 17,869 meticulously annotated task queries. 
 
 ![SoMe Benchmark Overview](https://github.com/LivXue/SoMe/blob/main/pics/framework.png)
 
@@ -86,7 +86,7 @@ pip install -e ./qwen_agent
 
 4. 📥 Download the test data and unzip it into `database`
    - Google Drive: [https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link](https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link)  
-   - Baidu Disk: [https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe](https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe) SoMe
+   - Baidu Disk: [https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe](https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe) Password: SoMe
 
 
 
