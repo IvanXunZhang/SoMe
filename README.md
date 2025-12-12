@@ -1,6 +1,7 @@
 <div align="center">
 <img src="https://github.com/LivXue/SoMe/blob/main/pics/logo.png" alt="SoMe Benchmark Logo" width="33%">
 </div>
+
 # 🤖 SoMe: A Realistic Benchmark for LLM-based Social Media Agents
 
 ## 📋 Overview
