@@ -43,7 +43,7 @@ The SoMe benchmark includes comprehensive datasets for each task, with the follo
 | ❓ Social Media Question-Answering | 2,000 | 8,651,759 | Posts & Users |
 | **Total** | **17,869** | **9,242,907** | **All** |
 
-## 📈 Evaluation Results
+## 🏆 Evaluation Results
 
 We evaluated various agentic LLMs on the SoMe benchmark. Below are the comprehensive evaluation results across all 8 tasks:
 
