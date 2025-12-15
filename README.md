@@ -45,7 +45,7 @@ The SoMe benchmark includes comprehensive datasets for each task, with the follo
 
 ## 📈 Evaluation Results
 
-We evaluated various LLM-based social media agents on the SoMe benchmark. Below are the comprehensive evaluation results across all 8 tasks:
+We evaluated various agentic LLMs on the SoMe benchmark. Below are the comprehensive evaluation results across all 8 tasks:
 
 ![SoMe Benchmark Results](https://github.com/LivXue/SoMe/blob/main/pics/result.png)
 
