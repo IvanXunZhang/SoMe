@@ -18,14 +18,14 @@ SoMe is a comprehensive benchmark designed to evaluate the capabilities of Large
 
 SoMe benchmark includes evaluation of social media agents across the following key tasks:
 
-- **🚨 Realtime Event Detection** - Assessing how well agents can identify and track emerging events in real-time
-- **📊 Streaming Event Summary** - Evaluating the agent's capacity to summarize ongoing events from streaming data
-- **🚫 Misinformation Detection** - Testing the agent's capability to identify and flag potentially false or misleading information
-- **🎯 User Behavior Prediction** - Evaluating how well agents can predict user interactions with social media content
-- **😊 User Emotion Analysis** - Assessing the agent's ability to analyze user emotions towards social media content
-- **💬 User Comment Simulation** - Testing how realistically agents can simulate user comments
-- **📱 Media Content Recommendation** - Evaluating an agent's ability to recommend relevant media content to users based on their interests and preferences
-- **❓ Social Media Question Answering** - Measuring the agent's ability to accurately answer questions about social media content
+- **🚨 Realtime Event Detection (RED)** - Assessing how well agents can identify and track emerging events in real-time
+- **📊 Streaming Event Summary (SES)** - Evaluating the agent's capacity to summarize ongoing events from streaming data
+- **🚫 Misinformation Detection (MID)** - Testing the agent's capability to identify and flag potentially false or misleading information
+- **🎯 User Behavior Prediction (UBP)** - Evaluating how well agents can predict user interactions with social media content
+- **😊 User Emotion Analysis (UEA)** - Assessing the agent's ability to analyze user emotions towards social media content
+- **💬 User Comment Simulation (UCS)** - Testing how realistically agents can simulate user comments
+- **📱 Media Content Recommendation (MCR)** - Evaluating an agent's ability to recommend relevant media content to users based on their interests and preferences
+- **❓ Social Media Question-Answering (SMQ)** - Measuring the agent's ability to accurately answer questions about social media content
 
 ## 📈 Dataset Statistics
 
@@ -40,8 +40,16 @@ The SoMe benchmark includes comprehensive datasets for each task, with the follo
 | 😊 User Emotion Analysis | 2,696 | 840,200 | Posts & Users |
 | 💬 User Comment Simulation | 4,000 | 840,200 | Posts & Users |
 | 📱 Media Content Recommendation | 4,000 | 840,200 | Posts & Users |
-| ❓ Social Media Question Answering | 2,000 | 8,651,759 | Posts & Users |
+| ❓ Social Media Question-Answering | 2,000 | 8,651,759 | Posts & Users |
 | **Total** | **17,869** | **9,242,907** | **All** |
+
+## 📈 Evaluation Results
+
+We evaluated various LLM-based social media agents on the SoMe benchmark. Below are the comprehensive evaluation results across all 8 tasks:
+
+![SoMe Benchmark Results](https://github.com/LivXue/SoMe/blob/main/pics/result.png)
+
+*Figure 1: Performance comparison of different agentic models across SoMe benchmark tasks*
 
 ## 📁 Project Structure
 
@@ -90,7 +98,7 @@ pip install -e ./qwen_agent
 
 
 
-## 💻 Usage
+## �💻 Usage
 
 ### 🏃‍♂️ Running Individual Tasks
 
