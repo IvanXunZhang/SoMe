@@ -4,6 +4,14 @@
 
 # 🤖 SoMe: A Realistic Benchmark for LLM-based Social Media Agents
 
+<div align="center" style="line-height: 1;">
+
+[![GITHUB](https://img.shields.io/badge/Github-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LivXue/SoMe)
+[![Paper](https://img.shields.io/badge/Paper-red?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2512.14720)
+
+</div>
+<p align="center">
+
 ## 📋 Overview
 
 SoMe is a comprehensive benchmark designed to evaluate the capabilities of Large Language Model (LLM)-based agents in realistic social media scenarios. This benchmark provides a standardized framework for testing and comparing social media agents across multiple dimensions of performance. SoMe comprises a diverse collection of 8 social media agent tasks, 9,164,284 posts, 6,591 user profiles, and 25,686 reports from various social media platforms (such as Weibo and X) and external websites, with 17,869 meticulously annotated task queries. 
