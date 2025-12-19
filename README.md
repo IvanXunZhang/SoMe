@@ -21,10 +21,12 @@ SoMe comprises a diverse collection of:
 - **8 social media agent tasks**
 - **9,164,284 posts** from various social media platforms
 - **6,591 user profiles** with rich behavioral data
-- **25,686 reports** from social media platforms and external websites
+- **25,686 reports** from external websites
 - **17,869 meticulously annotated task queries**
 
 ![SoMe Benchmark Overview](https://github.com/LivXue/SoMe/blob/main/pics/framework.png)
+
+*Figure 1: An example of agentic task in SoMe*
 
 ---
 
@@ -40,14 +42,14 @@ SoMe benchmark evaluates social media agents across 8 key tasks, covering divers
 
 | Task Category | Task Name | Description |
 |---------------|-----------|-------------|
-| **Event Handling** | 🚨 Realtime Event Detection (RED) | Identify and track emerging events in real-time |
-| **Event Handling** | 📊 Streaming Event Summary (SES) | Summarize ongoing events from streaming data |
-| **Content Analysis** | 🚫 Misinformation Detection (MID) | Identify and flag potentially false or misleading information |
-| **User Understanding** | 🎯 User Behavior Prediction (UBP) | Predict user interactions with social media content |
-| **User Understanding** | 😊 User Emotion Analysis (UEA) | Analyze user emotions towards social media content |
-| **User Simulation** | 💬 User Comment Simulation (UCS) | Simulate realistic user comments |
-| **Recommendation** | 📱 Media Content Recommendation (MCR) | Recommend relevant media content based on user interests |
-| **Knowledge & QA** | ❓ Social Media Question-Answering (SMQ) | Accurately answer questions about social media content |
+| **Post-centered** | 🚨 Realtime Event Detection (RED) | Identify and track emerging events in real-time |
+| **Post-centered** | 📊 Streaming Event Summary (SES) | Summarize ongoing events from streaming data |
+| **Post-centered** | 🚫 Misinformation Detection (MID) | Identify and flag potentially false or misleading information |
+| **User-centered** | 🎯 User Behavior Prediction (UBP) | Predict user interactions with social media content |
+| **User-centered** | 😊 User Emotion Analysis (UEA) | Analyze user emotions towards social media content |
+| **User-centered** | 💬 User Comment Simulation (UCS) | Simulate realistic user comments |
+| **Comprehensive** | 📱 Media Content Recommendation (MCR) | Recommend relevant media content based on user interests |
+| **Comprehensive** | ❓ Social Media Question-Answering (SMQ) | Accurately answer questions about social media content |
 
 ---
 
@@ -75,7 +77,7 @@ We evaluated various agentic LLMs on the SoMe benchmark. Below are the comprehen
 
 ![SoMe Benchmark Results](https://github.com/LivXue/SoMe/blob/main/pics/result.png)
 
-*Figure 1: Performance comparison of different agentic models across SoMe benchmark tasks*
+*Figure 2: Performance comparison of different agentic models across SoMe benchmark tasks*
 
 ---
 
@@ -107,9 +109,9 @@ Social-Media-Agent/
 ## 🚀 Installation
 
 ### Prerequisites
-- Python 3.8+ installed on your system
+- Python 3.12+ installed on your system
 - Git installed for repository cloning
-- Sufficient disk space for datasets (recommended: 50GB+)
+- Sufficient disk space for data (recommended: 50GB+)
 
 ### Installation Steps
 
@@ -124,12 +126,7 @@ Social-Media-Agent/
    pip install -r requirements.txt
    ```
 
-3. **🔧 Install qwen-agent package**
-   ```bash
-   pip install -e ./qwen_agent
-   ```
-
-4. **📥 Download test data**
+3. **📥 Download test data**
    - Google Drive: [Download Link](https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link)  
    - Baidu Disk: [Download Link](https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe) (Password: SoMe)
    
@@ -183,11 +180,11 @@ python test_social_media_question_answering.py --model MODEL_NAME --base_url MOD
 After running the test scripts, evaluate the results using the provided evaluation scripts:
 
 ```bash
-# Option 1: For tasks with extraction step first
+# Option 1: For tasks with LLM-based answer extraction
 python eval_scripts/[TASK]_extraction.py
 python eval_scripts/[TASK]_compute_score.py
 
-# Option 2: For tasks with direct scoring
+# Option 2: For tasks with LLM-as-judge scoring
 python eval_scripts/[TASK]_scoring.py
 python eval_scripts/[TASK]_compute_score.py
 ```
@@ -200,8 +197,8 @@ python eval_scripts/[TASK]_compute_score.py
 
 The benchmark supports various LLM models through OpenAI-compatible API endpoints:
 
-- 🧩 **Qwen series models** (Qwen1.5, Qwen2, etc.)
-- 🔌 **OpenAI models** (GPT-3.5, GPT-4, etc.)
+- 🧩 **Qwen series models** (Qwen2.5, Qwen3, etc.)
+- 🔌 **OpenAI models** (GPT-4, GPT-5, etc.)
 - 🌐 **Third-party models** with OpenAI-compatible APIs (DeepSeek, Claude, etc.)
 - 📦 **Local models** served with OpenAI-compatible wrappers (vLLM, Ollama, etc.)
 
