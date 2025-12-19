@@ -4,52 +4,70 @@
 
 # 🤖 SoMe: A Realistic Benchmark for LLM-based Social Media Agents
 
-<div align="center" style="line-height: 1;">
+<div align="center" style="line-height: 1.5;">
 
 [![GITHUB](https://img.shields.io/badge/Github-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LivXue/SoMe)
 [![Paper](https://img.shields.io/badge/Paper-red?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2512.14720)
 
 </div>
-<p align="center">
+
+---
 
 ## 📋 Overview
 
-SoMe is a comprehensive benchmark designed to evaluate the capabilities of Large Language Model (LLM)-based agents in realistic social media scenarios. This benchmark provides a standardized framework for testing and comparing social media agents across multiple dimensions of performance. SoMe comprises a diverse collection of 8 social media agent tasks, 9,164,284 posts, 6,591 user profiles, and 25,686 reports from various social media platforms (such as Weibo and X) and external websites, with 17,869 meticulously annotated task queries. 
+SoMe is a comprehensive benchmark designed to evaluate the capabilities of Large Language Model (LLM)-based agents in realistic social media scenarios. This benchmark provides a standardized framework for testing and comparing social media agents across multiple dimensions of performance.
+
+SoMe comprises a diverse collection of:
+- **8 social media agent tasks**
+- **9,164,284 posts** from various social media platforms
+- **6,591 user profiles** with rich behavioral data
+- **25,686 reports** from social media platforms and external websites
+- **17,869 meticulously annotated task queries**
 
 ![SoMe Benchmark Overview](https://github.com/LivXue/SoMe/blob/main/pics/framework.png)
+
+---
 
 ## 📰 News
 
 - **[2025.11]** 🎉 Our paper is accepted by AAAI 2026!
 
+---
+
 ## ✨ Features
 
-SoMe benchmark includes evaluation of social media agents across the following key tasks:
+SoMe benchmark evaluates social media agents across 8 key tasks, covering diverse aspects of social media intelligence:
 
-- **🚨 Realtime Event Detection (RED)** - Assessing how well agents can identify and track emerging events in real-time
-- **📊 Streaming Event Summary (SES)** - Evaluating the agent's capacity to summarize ongoing events from streaming data
-- **🚫 Misinformation Detection (MID)** - Testing the agent's capability to identify and flag potentially false or misleading information
-- **🎯 User Behavior Prediction (UBP)** - Evaluating how well agents can predict user interactions with social media content
-- **😊 User Emotion Analysis (UEA)** - Assessing the agent's ability to analyze user emotions towards social media content
-- **💬 User Comment Simulation (UCS)** - Testing how realistically agents can simulate user comments
-- **📱 Media Content Recommendation (MCR)** - Evaluating an agent's ability to recommend relevant media content to users based on their interests and preferences
-- **❓ Social Media Question-Answering (SMQ)** - Measuring the agent's ability to accurately answer questions about social media content
+| Task Category | Task Name | Description |
+|---------------|-----------|-------------|
+| **Event Handling** | 🚨 Realtime Event Detection (RED) | Identify and track emerging events in real-time |
+| **Event Handling** | 📊 Streaming Event Summary (SES) | Summarize ongoing events from streaming data |
+| **Content Analysis** | 🚫 Misinformation Detection (MID) | Identify and flag potentially false or misleading information |
+| **User Understanding** | 🎯 User Behavior Prediction (UBP) | Predict user interactions with social media content |
+| **User Understanding** | 😊 User Emotion Analysis (UEA) | Analyze user emotions towards social media content |
+| **User Simulation** | 💬 User Comment Simulation (UCS) | Simulate realistic user comments |
+| **Recommendation** | 📱 Media Content Recommendation (MCR) | Recommend relevant media content based on user interests |
+| **Knowledge & QA** | ❓ Social Media Question-Answering (SMQ) | Accurately answer questions about social media content |
+
+---
 
 ## 📈 Dataset Statistics
 
 The SoMe benchmark includes comprehensive datasets for each task, with the following statistics:
 
-| Task | #Query | #Data | Data Type |
-|------|-------------|-----------|----------|
+| Task | # Query | # Data | Data Type |
+|------|---------|--------|-----------|
 | 🚨 Real-time Event Detection | 568 | 476,611 | Posts |
 | 📊 Streaming Event Summary | 154 | 7,898,959 | Posts |
 | 🚫 Misinformation Detection | 1,451 | 27,137 | Posts & Knowledge |
-| 🎯 User Behavior Prediction | 3,000 | 840,200 | Posts & Users|
+| 🎯 User Behavior Prediction | 3,000 | 840,200 | Posts & Users |
 | 😊 User Emotion Analysis | 2,696 | 840,200 | Posts & Users |
 | 💬 User Comment Simulation | 4,000 | 840,200 | Posts & Users |
 | 📱 Media Content Recommendation | 4,000 | 840,200 | Posts & Users |
 | ❓ Social Media Question-Answering | 2,000 | 8,651,759 | Posts & Users |
 | **Total** | **17,869** | **9,242,907** | **All** |
+
+---
 
 ## 🏆 Evaluation Results
 
@@ -58,6 +76,8 @@ We evaluated various agentic LLMs on the SoMe benchmark. Below are the comprehen
 ![SoMe Benchmark Results](https://github.com/LivXue/SoMe/blob/main/pics/result.png)
 
 *Figure 1: Performance comparison of different agentic models across SoMe benchmark tasks*
+
+---
 
 ## 📁 Project Structure
 
@@ -82,31 +102,42 @@ Social-Media-Agent/
 └── 💾 database/                   # Database directory
 ```
 
+---
+
 ## 🚀 Installation
 
-1. 📥 Clone the repository:
-```bash
-git clone https://github.com/your-username/Social-Media-Agent.git
-cd Social-Media-Agent
-```
+### Prerequisites
+- Python 3.8+ installed on your system
+- Git installed for repository cloning
+- Sufficient disk space for datasets (recommended: 50GB+)
 
-2. 📦 Install the required dependencies:
-```bash
-pip install -r requirements.txt
-```
+### Installation Steps
 
-3. 🔧 Install the qwen-agent package:
-```bash
-pip install -e ./qwen_agent
-```
+1. **📥 Clone the repository**
+   ```bash
+   git clone https://github.com/LivXue/SoMe.git
+   cd SoMe
+   ```
 
-4. 📥 Download the test data and unzip it into `database`
-   - Google Drive: [https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link](https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link)  
-   - Baidu Disk: [https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe](https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe) Password: SoMe
+2. **📦 Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+3. **🔧 Install qwen-agent package**
+   ```bash
+   pip install -e ./qwen_agent
+   ```
 
+4. **📥 Download test data**
+   - Google Drive: [Download Link](https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link)  
+   - Baidu Disk: [Download Link](https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe) (Password: SoMe)
+   
+   After downloading, unzip the data into the `database` directory.
 
-## �💻 Usage
+---
+
+## 💻 Usage
 
 ### 🏃‍♂️ Running Individual Tasks
 
@@ -122,7 +153,7 @@ python test_streaming_event_summary.py --model MODEL_NAME --base_url MODEL_SERVE
 # 🚫 Misinformation Detection
 python test_misinformation_detection.py --model MODEL_NAME --base_url MODEL_SERVER_URL --api_key API_KEY
 
-# 🎯 User bahavior Prediction
+# 🎯 User Behavior Prediction
 python test_user_behavior_prediction.py --model MODEL_NAME --base_url MODEL_SERVER_URL --api_key API_KEY
 
 # 😊 User Emotion Analysis
@@ -140,54 +171,92 @@ python test_social_media_question_answering.py --model MODEL_NAME --base_url MOD
 
 ### ⚙️ Command Line Arguments
 
-- `--model`: The model name to use (e.g., "deepseek-chat")
-- `--base_url`: The base URL for the model server (e.g., "https://api.deepseek.com")
-- `--api_key`: The API key for the model server
-- `--output_path`: The output path for results (default: "results/[task_name]")
+| Argument | Description | Example |
+|----------|-------------|---------|
+| `--model` | The model name to use | "deepseek-chat" |
+| `--base_url` | The base URL for the model server | "https://api.deepseek.com" |
+| `--api_key` | The API key for the model server | Your actual API key |
+| `--output_path` | Output path for results | "results/my_experiment" |
 
 ### 📊 Evaluation
 
-After running the test scripts, you can evaluate the results using the provided evaluation scripts:
+After running the test scripts, evaluate the results using the provided evaluation scripts:
 
 ```bash
-# For each task, use the corresponding evaluation script
+# Option 1: For tasks with extraction step first
 python eval_scripts/[TASK]_extraction.py
 python eval_scripts/[TASK]_compute_score.py
-# Or
+
+# Option 2: For tasks with direct scoring
 python eval_scripts/[TASK]_scoring.py
 python eval_scripts/[TASK]_compute_score.py
 ```
-***Note***: The LLM setting of evaluation is in `eval_scripts/settings.json`
+
+> **Note**: The LLM settings for evaluation are configured in `eval_scripts/settings.json`
+
+---
 
 ## 🧠 Model Support
 
-The benchmark supports various LLM models including:
+The benchmark supports various LLM models through OpenAI-compatible API endpoints:
 
-- 🧩 Qwen series models
-- 🔌 OpenAI compatible models
-- 🌐 Any model that provides an OpenAI-compatible API endpoint
+- 🧩 **Qwen series models** (Qwen1.5, Qwen2, etc.)
+- 🔌 **OpenAI models** (GPT-3.5, GPT-4, etc.)
+- 🌐 **Third-party models** with OpenAI-compatible APIs (DeepSeek, Claude, etc.)
+- 📦 **Local models** served with OpenAI-compatible wrappers (vLLM, Ollama, etc.)
+
+---
 
 ## 📚 Citation
 
-If you use this benchmark in your research, please cite:
+If you use this benchmark in your research, please cite our paper:
 
-```
+```bibtex
 @inproceedings{some2026,
   title={SoMe: A Realistic Benchmark for LLM-based Social Media Agents},
-  author={Dizhan Xue, Jing Cui, Shengsheng Qian, Chuanrui Hu, Changsheng Xu},
+  author={Dizhan Xue and Jing Cui and Shengsheng Qian and Chuanrui Hu and Changsheng Xu},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
   year={2026}
 }
 ```
 
+---
+
 ## 🤝 Contributing
 
-We welcome contributions to improve the benchmark! Please feel free to submit pull requests or open issues for any bugs or feature requests.
+We welcome contributions to improve the benchmark! Here's how you can help:
+
+1. **🐛 Report bugs** by opening issues with detailed descriptions
+2. **💡 Suggest features** for new tasks or improvements
+3. **🔧 Submit code** via pull requests for bug fixes or enhancements
+4. **📊 Add datasets** to expand the benchmark coverage
+5. **📝 Improve documentation** for better usability
+
+Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+
+---
 
 ## 📄 License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## 🙏 Acknowledgments
 
-This benchmark is built upon the Qwen-Agent framework. We thank the Qwen team for their excellent work on developing this framework.
+We would like to express our gratitude to:
+
+- The **Qwen team** for their excellent Qwen-Agent framework, which forms the foundation of this benchmark
+- All contributors who have helped develop and improve SoMe
+- The social media platforms and data providers that make this research possible
+- The AAAI 2026 reviewers for their valuable feedback
+
+---
+
+## 📞 Contact
+
+For questions or inquiries about the benchmark, please contact:
+
+- Dizhan Xue: xuedizhan17@mails.ucas.ac.cn
+
+Visit our [GitHub repository](https://github.com/LivXue/SoMe) for the latest updates and discussions.
