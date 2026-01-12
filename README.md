@@ -7,6 +7,7 @@
 <div align="center" style="line-height: 1.5;">
 
 [![GITHUB](https://img.shields.io/badge/Github-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LivXue/SoMe)
+[![Dataset](https://img.shields.io/badge/Dataset-yellow?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/LivXue/SoMe)
 [![Paper](https://img.shields.io/badge/Paper-red?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2512.14720)
 
 </div>
@@ -127,6 +128,7 @@ Social-Media-Agent/
    ```
 
 3. **📥 Download test data**
+   - Hugging Face Dataset: [Download Link](https://huggingface.co/datasets/LivXue/SoMe)
    - Google Drive: [Download Link](https://drive.google.com/file/d/1sD2EaZStK5nODQWlJTHZ8WfFb5QHgwMN/view?usp=drive_link)  
    - Baidu Disk: [Download Link](https://pan.baidu.com/s/1DugTyLR5AaQHeOdXG6wqQQ?pwd=SoMe) (Password: SoMe)
    
