@@ -33,6 +33,7 @@ SoMe comprises a diverse collection of:
 
 ## 📰 News
 
+- **[2026.01]** 📧 **We release [MailMind: An AI-powered Email System that Can Do Your Job](https://github.com/LivXue/open-email-agent)**
 - **[2025.11]** 🎉 Our paper is accepted by AAAI 2026!
 
 ---
