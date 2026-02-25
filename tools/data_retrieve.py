@@ -38,7 +38,7 @@ class RetrievePosts(BaseTool):
                                 device=embedding_model_device, 
                                 model_kwargs={"torch_dtype": torch.bfloat16}, 
                                 tokenizer_kwargs={"padding_side": "left"})
-    emb_base = np.load("./database/emb_data/topic_data.npy", allow_pickle=True).item()
+   # emb_base = np.load("./database/emb_data/topic_data.npy", allow_pickle=True).item()
     
     def call(self, params: str, data_folder, **kwargs):
         params = json5.loads(params)
