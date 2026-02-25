@@ -251,7 +251,13 @@ You are provided with function signatures within <tools></tools> XML tags:
 For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
 <tool_call>
 {{"name": <function-name>, "arguments": <args-json-object>}}
-</tool_call>"""
+</tool_call>
+
+## CRITICAL RULES:
+1. You MUST NOT simulate, fabricate, or guess the output of a tool.
+2. After generating a <tool_call> block, you MUST STOP generating immediately and wait for the real <tool_response>.
+3. Do not generate any text, explanation, or "Tool Response:" after the closing </tool_call> tag.
+"""
 
 SPECIAL_CODE_MODE = os.getenv('SPECIAL_CODE_MODE', 'false').lower() == 'true'
 CODE_TOOL_PATTERN = 'code_interpreter'
@@ -274,7 +280,13 @@ For code parameters, use placeholders first, and then put the code within <code>
 <code>
 Here is the code.
 </code>
-</tool_call>"""
+</tool_call>
+
+## ANTI-HALLUCINATION RULES:
+- NEVER pretend to have executed the code yourself. 
+- You must output the <code> block and then STOP. 
+- Any content starting with "<tool_response>" or "Output:" MUST only be provided by the system, never by you.
+"""
 
 
 # Mainly for removing incomplete special tokens when streaming the output
